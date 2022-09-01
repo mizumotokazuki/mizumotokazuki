@@ -1,3 +1,6 @@
 # データベース更新手順
 - 1.更新内容をDB担当者に連絡する
 - 2.DB担当者が作成したdumpファイルを使って更新する
+  - DB:examplatform がない場合は`mysqladmin -u ユーザー名 -p create examplatform` でDBを作成する
+  - 次の `mysql -u ユーザー名 -p examplatform < examplatform.dump.sql` を入力して、更新する
+- 3.更新したらDB担当者に完了報告をする
